@@ -38,7 +38,7 @@
 {"question":"Welches ist das einzige Land der Welt mit einer nicht-rechteckigen Flagge?","answers":["Nepal","Bhutan"],"notes":""},
 {"question":"Welches Element macht den Hauptbestandteil der Sonne aus?","answers":["Wasserstoff","Helium"],"notes":""},
 {"question":"Welches Land hat die meisten Inseln weltweit?","answers":["Schweden","Indonesien"],"notes":""},
-{"question":"Wer schrieb den Roman "1984"?","answers":["George Orwell","Aldous Huxley"],"notes":""},
+{"question":"Wer schrieb den Roman 1984?","answers":["George Orwell","Aldous Huxley"],"notes":""},
 {"question":"Welches Land ist der größte Kaffeeproduzent der Welt?","answers":["Brasilien","Kolumbien"],"notes":""},
 {"question":"Welches Buch diente als direkte Steilvorlage für das Musical Tanz der Vampire?","answers":["Film von Roman Polański","Roman von Bram Stoker"],"notes":""},
 {"question":"In welchem Musical bringt ein mörderischer Barbier in London seine Opfer zu Fleischpasteten verarbeitend unter?","answers":["Sweeney Todd","Jekyll & Hyde"],"notes":""},
@@ -66,7 +66,7 @@
 {"question":"Hat das Periodensystem der Elemente MEHR als 115 offiziell anerkannte chemische Elemente?","answers":["Ja","nein"],"notes":"118"},
 {"question":"Welcher Astronom soll nach seinem Widerruf vor der Inquisition gemurmelt haben: Und sie bewegt sich doch!?","answers":["Galileo Galilei","Nikolaus Kopernikus"],"notes":""},
 {"question":"Welches historische Stadttor Rostocks gilt als das älteste erhaltene Tor der Stadt?","answers":["Kuhtor","Steintor"],"notes":""},
-{"question":"In welchem Jahr erhielt Rostock das Stadtrecht nach lübschem Recht?","answers":["1218","1219"],"notes":""},
+{"question":"In welchem Jahr erhielt Rostock das Stadtrecht nach lübschem Recht?","answers":["1218","1219"],"notes":""}
 
   ]
 }
