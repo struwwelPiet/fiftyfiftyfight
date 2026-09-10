@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "title": "Fifty-Fifty Fight",
+    "kicker": "Livequiz"
+  },
+  "questions": [
+    { "question": "Welches Tier hat mehr Beine?", "answers": ["Spinne", "Ameise"] },
+    { "question": "Was ist größer?", "answers": ["Die Sonne", "Der Mond"] },
+    {
+      "question": "Aus welchem Jahrzehnt ist dieser Song?",
+      "audio": "songs/beispiel-song.mp3",
+      "answers": ["1980er", "2000er"]
+    },
+    {
+      "question": "Welches Wahrzeichen steht in Paris?",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons.jpg/640px-Tour_Eiffel_Wikimedia_Commons.jpg",
+      "answers": ["Eiffelturm", "Big Ben"]
+    },
+    {
+      "question": "Welches Logo gehört zu Apple?",
+      "answers": [
+        { "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/240px-Apple_logo_black.svg.png" },
+        { "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Android_robot.svg/240px-Android_robot.svg.png" }
+      ]
+    },
+    { "question": "Was ist schwerer?", "answers": ["1 kg Eisen", "1 kg Federn"] },
+    { "question": "Welcher Ozean ist größer?", "answers": ["Pazifik", "Atlantik"] },
+    { "question": "Welcher Fluss ist länger?", "answers": ["Donau", "Rhein"] }
+  ]
+}
