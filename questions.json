@@ -26,47 +26,47 @@
     { "question": "Was ist schwerer?", "answers": ["1 kg Eisen", "1 kg Federn"] },
     { "question": "Welcher Ozean ist größer?", "answers": ["Pazifik", "Atlantik"] },
     { "question": "Welcher Fluss ist länger?", "answers": ["Donau", "Rhein"] },
-    {"question":"Welches Instrument hat schwarze und weiße Tasten?","answers":["Klavier","Harfe"],"notes":""}
-{"question":"Wie viele Herzen hat ein Oktopus?","answers":["3","4"],"notes":""}
-{"question":"Welches Land schenkte den USA die Freiheitsstatue?","answers":["Frankreich","Großbritannien"],"notes":""}
-{"question":"Welches Getreide ist die Hauptzutat von traditioneller Pasta?","answers":["Hartweizen","Dinkel"],"notes":""}
-{"question":"Welches Land ist flächenmäßig das zweitgrößte der Erde?","answers":["Kanada","USA"],"notes":""}
-{"question":"In welchem Jahr ging die Titanic unter?","answers":["1912","1905"],"notes":""}
-{"question":"Wie heißt die Hauptstadt von Kanada?","answers":["Ottawa","Toronto"],"notes":""}
-{"question":"Wer war der erste Mensch im Weltall?","answers":["Juri Gagarin","Neil Armstrong"],"notes":""}
-{"question":"Wie viele Zähne hat ein erwachsener Hund im Normalfall?","answers":["42","36"],"notes":""}
-{"question":"Welches ist das einzige Land der Welt mit einer nicht-rechteckigen Flagge?","answers":["Nepal","Bhutan"],"notes":""}
-{"question":"Welches Element macht den Hauptbestandteil der Sonne aus?","answers":["Wasserstoff","Helium"],"notes":""}
-{"question":"Welches Land hat die meisten Inseln weltweit?","answers":["Schweden","Indonesien"],"notes":""}
-{"question":"Wer schrieb den Roman "1984"?","answers":["George Orwell","Aldous Huxley"],"notes":""}
-{"question":"Welches Land ist der größte Kaffeeproduzent der Welt?","answers":["Brasilien","Kolumbien"],"notes":""}
-{"question":"Welches Buch diente als direkte Steilvorlage für das Musical Tanz der Vampire?","answers":["Film von Roman Polański","Roman von Bram Stoker"],"notes":""}
-{"question":"In welchem Musical bringt ein mörderischer Barbier in London seine Opfer zu Fleischpasteten verarbeitend unter?","answers":["Sweeney Todd","Jekyll & Hyde"],"notes":""}
-{"question":"Wie heißt die Hauptfigur in Les Misérables, die wegen des Diebstahls eines Brots 19 Jahre in Haft war?","answers":["Jean Valjean","Javert"],"notes":""}
-{"question":"Welches Instrument bildet das musikalische Leitmotiv des Phantoms im Musical Das Phantom der Oper?","answers":["Orgel","Cello"],"notes":""}
-{"question":"Welches Bundesland in Deutschland hat die wenigsten Einwohner?","answers":["Bremen","Saarland"],"notes":""}
-{"question":"Zu welchem Land gehört diese Flagge?","answers":["Afghanistan","Syrien"],"notes":""}
-{"question":"Wie viele Zeitzonen durchquert die Transsibirische Eisenbahn komplett?","answers":["8","10"],"notes":""}
-{"question":"Wo liegt Neubrandenburg?","answers":["Mecklenburg","Vorpommern"],"notes":""}
-{"question":"Welches Land wurde am häufigsten Fußballweltmeister?","answers":["Brasilien","Italien"],"notes":""}
-{"question":"Aus welchem Jahrzehnt ist dieser Song?","answers":["1990er","1980er"],"notes":""}
-{"question":"Welche Farbe hat das Lichtschwert von Darth Vader in Star Wars?","answers":["Rot","Blau"],"notes":""}
-{"question":"Wie heißt das meistverkaufte Videospiel aller Zeiten","answers":["Tetris","Minecraft"],"notes":""}
-{"question":"Wie viele Minuten dauert ein reguläres Eishockey-Spiel (ohne Verlängerung)?","answers":["60 Minuten","70 Minuten"],"notes":""}
-{"question":"In welcher Serie spielt die Handlung rund um die Anwaltskanzlei Pearson Hardman?","answers":["Suits","Better Call Saul"],"notes":""}
-{"question":"Welches Entwicklerstudio brachte 2015 das Rollenspiel-Meisterwerk The Witcher 3: Wild Hunt heraus?","answers":["CD Project Red","Bethesda"],"notes":""}
-{"question":"Unter welchem bürgerlichen Namen wurde die Sängerin Lady Gaga geboren?","answers":["Stefani Germanotta","Robyn Fenty"],"notes":""}
-{"question":"Welches heute weltbekannte Unternehmen hieß bei seiner Gründung 1994 noch Cadabra?","answers":["Amazon","eBay"],"notes":""}
-{"question":"In welchem Jahr erschien das allererste Pokémon-Spiel (Rot & Grün) in Japan?","answers":["1996","1998"],"notes":""}
-{"question":"Wie nennt man den Hauptprozessor eines Computers abgekürzt?","answers":["CPU","GPU"],"notes":""}
-{"question":"Wiegt ein ausgewachsener Blauwal mehr als 100 Tonnen?","answers":["Ja","Nein"],"notes":""}
-{"question":"Von wem stammt das berühmte Zitat: Ich bin ein Berliner?","answers":["John F. Kennedy","Ronald Reagan"],"notes":""}
-{"question":"In welchem Jahrhundert wurde die Universität Rostock gegründet?","answers":["15. Jahrhundert","17. Jahrhundert"],"notes":""}
-{"question":"Ist die Entfernung von Rostock nach Berlin per Luftlinie LÄNGER als 200 Kilometer?","answers":["Nein","Ja"],"notes":"ca. 190 km"}
-{"question":"Hat das Periodensystem der Elemente MEHR als 115 offiziell anerkannte chemische Elemente?","answers":["Ja","nein"],"notes":"118"}
-{"question":"Welcher Astronom soll nach seinem Widerruf vor der Inquisition gemurmelt haben: Und sie bewegt sich doch!?","answers":["Galileo Galilei","Nikolaus Kopernikus"],"notes":""}
-{"question":"Welches historische Stadttor Rostocks gilt als das älteste erhaltene Tor der Stadt?","answers":["Kuhtor","Steintor"],"notes":""}
-{"question":"In welchem Jahr erhielt Rostock das Stadtrecht nach lübschem Recht?","answers":["1218","1219"],"notes":""}
+    {"question":"Welches Instrument hat schwarze und weiße Tasten?","answers":["Klavier","Harfe"],"notes":""},
+{"question":"Wie viele Herzen hat ein Oktopus?","answers":["3","4"],"notes":""},
+{"question":"Welches Land schenkte den USA die Freiheitsstatue?","answers":["Frankreich","Großbritannien"],"notes":""},
+{"question":"Welches Getreide ist die Hauptzutat von traditioneller Pasta?","answers":["Hartweizen","Dinkel"],"notes":""},
+{"question":"Welches Land ist flächenmäßig das zweitgrößte der Erde?","answers":["Kanada","USA"],"notes":""},
+{"question":"In welchem Jahr ging die Titanic unter?","answers":["1912","1905"],"notes":""},
+{"question":"Wie heißt die Hauptstadt von Kanada?","answers":["Ottawa","Toronto"],"notes":""},
+{"question":"Wer war der erste Mensch im Weltall?","answers":["Juri Gagarin","Neil Armstrong"],"notes":""},
+{"question":"Wie viele Zähne hat ein erwachsener Hund im Normalfall?","answers":["42","36"],"notes":""},
+{"question":"Welches ist das einzige Land der Welt mit einer nicht-rechteckigen Flagge?","answers":["Nepal","Bhutan"],"notes":""},
+{"question":"Welches Element macht den Hauptbestandteil der Sonne aus?","answers":["Wasserstoff","Helium"],"notes":""},
+{"question":"Welches Land hat die meisten Inseln weltweit?","answers":["Schweden","Indonesien"],"notes":""},
+{"question":"Wer schrieb den Roman "1984"?","answers":["George Orwell","Aldous Huxley"],"notes":""},
+{"question":"Welches Land ist der größte Kaffeeproduzent der Welt?","answers":["Brasilien","Kolumbien"],"notes":""},
+{"question":"Welches Buch diente als direkte Steilvorlage für das Musical Tanz der Vampire?","answers":["Film von Roman Polański","Roman von Bram Stoker"],"notes":""},
+{"question":"In welchem Musical bringt ein mörderischer Barbier in London seine Opfer zu Fleischpasteten verarbeitend unter?","answers":["Sweeney Todd","Jekyll & Hyde"],"notes":""},
+{"question":"Wie heißt die Hauptfigur in Les Misérables, die wegen des Diebstahls eines Brots 19 Jahre in Haft war?","answers":["Jean Valjean","Javert"],"notes":""},
+{"question":"Welches Instrument bildet das musikalische Leitmotiv des Phantoms im Musical Das Phantom der Oper?","answers":["Orgel","Cello"],"notes":""},
+{"question":"Welches Bundesland in Deutschland hat die wenigsten Einwohner?","answers":["Bremen","Saarland"],"notes":""},
+{"question":"Zu welchem Land gehört diese Flagge?","answers":["Afghanistan","Syrien"],"notes":""},
+{"question":"Wie viele Zeitzonen durchquert die Transsibirische Eisenbahn komplett?","answers":["8","10"],"notes":""},
+{"question":"Wo liegt Neubrandenburg?","answers":["Mecklenburg","Vorpommern"],"notes":""},
+{"question":"Welches Land wurde am häufigsten Fußballweltmeister?","answers":["Brasilien","Italien"],"notes":""},
+{"question":"Aus welchem Jahrzehnt ist dieser Song?","answers":["1990er","1980er"],"notes":""},
+{"question":"Welche Farbe hat das Lichtschwert von Darth Vader in Star Wars?","answers":["Rot","Blau"],"notes":""},
+{"question":"Wie heißt das meistverkaufte Videospiel aller Zeiten","answers":["Tetris","Minecraft"],"notes":""},
+{"question":"Wie viele Minuten dauert ein reguläres Eishockey-Spiel (ohne Verlängerung)?","answers":["60 Minuten","70 Minuten"],"notes":""},
+{"question":"In welcher Serie spielt die Handlung rund um die Anwaltskanzlei Pearson Hardman?","answers":["Suits","Better Call Saul"],"notes":""},
+{"question":"Welches Entwicklerstudio brachte 2015 das Rollenspiel-Meisterwerk The Witcher 3: Wild Hunt heraus?","answers":["CD Project Red","Bethesda"],"notes":""},
+{"question":"Unter welchem bürgerlichen Namen wurde die Sängerin Lady Gaga geboren?","answers":["Stefani Germanotta","Robyn Fenty"],"notes":""},
+{"question":"Welches heute weltbekannte Unternehmen hieß bei seiner Gründung 1994 noch Cadabra?","answers":["Amazon","eBay"],"notes":""},
+{"question":"In welchem Jahr erschien das allererste Pokémon-Spiel (Rot & Grün) in Japan?","answers":["1996","1998"],"notes":""},
+{"question":"Wie nennt man den Hauptprozessor eines Computers abgekürzt?","answers":["CPU","GPU"],"notes":""},
+{"question":"Wiegt ein ausgewachsener Blauwal mehr als 100 Tonnen?","answers":["Ja","Nein"],"notes":""},
+{"question":"Von wem stammt das berühmte Zitat: Ich bin ein Berliner?","answers":["John F. Kennedy","Ronald Reagan"],"notes":""},
+{"question":"In welchem Jahrhundert wurde die Universität Rostock gegründet?","answers":["15. Jahrhundert","17. Jahrhundert"],"notes":""},
+{"question":"Ist die Entfernung von Rostock nach Berlin per Luftlinie LÄNGER als 200 Kilometer?","answers":["Nein","Ja"],"notes":"ca. 190 km"},
+{"question":"Hat das Periodensystem der Elemente MEHR als 115 offiziell anerkannte chemische Elemente?","answers":["Ja","nein"],"notes":"118"},
+{"question":"Welcher Astronom soll nach seinem Widerruf vor der Inquisition gemurmelt haben: Und sie bewegt sich doch!?","answers":["Galileo Galilei","Nikolaus Kopernikus"],"notes":""},
+{"question":"Welches historische Stadttor Rostocks gilt als das älteste erhaltene Tor der Stadt?","answers":["Kuhtor","Steintor"],"notes":""},
+{"question":"In welchem Jahr erhielt Rostock das Stadtrecht nach lübschem Recht?","answers":["1218","1219"],"notes":""},
 
   ]
 }
