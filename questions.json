@@ -16,6 +16,7 @@
     {"question":"Welches Instrument bildet das musikalische Leitmotiv des Phantoms im Musical Das Phantom der Oper?","answers":["Orgel","Cello"]},
     {"question":"Wie heißt das meistverkaufte Videospiel aller Zeiten","answers":["Tetris","Minecraft"]},
     {"question":"In welcher Serie spielt die Handlung rund um die Anwaltskanzlei \"Pearson Hardman\"?","answers":["Suits","Better Call Saul"]},
+    {"question":"Welches Schild zeigt das eingeschränkte Halteverbot?","answers":[{"image":"assets/sign1.png"},{"image":"assets/sign2.png"}]},
     {"question":"Unter welchem bürgerlichen Namen wurde die Sängerin Lady Gaga geboren?","answers":["Stefani Germanotta","Robyn Fenty"]},
     {"question":"Wiegt ein ausgewachsener Blauwal mehr als 100 Tonnen?","answers":["Ja","Nein"]},
     {"question":"Von wem stammt das berühmte Zitat: \"Ich bin ein Berliner\"?","answers":["John F. Kennedy","Ronald Reagan"]},
