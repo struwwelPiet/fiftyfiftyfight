@@ -356,6 +356,51 @@
     font-family:var(--body);
   }
 
+  .note-box{
+    max-width:min(70vw,760px);
+    text-align:center;
+    font-size:clamp(1rem,1.6vw,1.3rem);
+    color:var(--ink-dim);
+    line-height:1.5;
+    padding:0 2vw;
+    opacity:0; transform:translateY(10px);
+  }
+  .note-box:empty{ display:none; }
+  .note-box.show{
+    animation: verdictIn .5s cubic-bezier(.2,.9,.3,1.2) .2s forwards;
+  }
+
+  .fullscreen-btn{
+    position:fixed;
+    bottom:2vh; right:2.2vw;
+    z-index:6;
+    width:clamp(40px,4.4vw,54px);
+    height:clamp(40px,4.4vw,54px);
+    border-radius:50%;
+    border:1px solid var(--line);
+    background:rgba(20,25,34,0.7);
+    backdrop-filter:blur(6px);
+    display:flex; align-items:center; justify-content:center;
+    cursor:pointer;
+    opacity:.55;
+    transition:opacity .25s ease, background .25s ease, transform .15s ease;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .fullscreen-btn:hover,
+  .fullscreen-btn:active{
+    opacity:1;
+    background:rgba(27,33,44,0.9);
+  }
+  .fullscreen-btn:active{ transform:scale(.92); }
+  .fullscreen-btn svg{
+    width:56%; height:56%;
+    fill:none;
+    stroke:var(--ink);
+    stroke-width:2;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+
   @media (prefers-reduced-motion: reduce){
     *{ animation:none !important; transition:none !important; }
   }
@@ -408,6 +453,7 @@
           <div class="verdict" id="verdict-right"></div>
         </div>
       </div>
+      <div class="note-box" id="note-box"></div>
     </div>
   </div>
 
@@ -418,23 +464,14 @@
 
 </div>
 
-<div class="legend">→ / rechte Hälfte tippen: weiter · ← / linke Hälfte tippen: zurück · Home Start · F Vollbild</div>
+<div class="legend">→ / rechte Hälfte tippen: weiter · ← / linke Hälfte tippen: zurück · Home Start · F oder Button unten rechts: Vollbild</div>
+
+<button id="fullscreen-btn" class="fullscreen-btn" aria-label="Vollbild umschalten">
+  <svg id="fs-icon-expand" viewBox="0 0 24 24"><path d="M4 9V5a1 1 0 0 1 1-1h4M20 9V5a1 1 0 0 1-1-1h-4M4 15v4a1 1 0 0 0 1 1h4M20 15v4a1 1 0 0 1-1 1h-4"/></svg>
+  <svg id="fs-icon-compact" viewBox="0 0 24 24" hidden><path d="M9 4v3a1 1 0 0 1-1 1H5M15 4v3a1 1 0 0 0 1 1h3M9 20v-3a1 1 0 0 0-1-1H5M15 20v-3a1 1 0 0 1 1-1h3"/></svg>
+</button>
 
 <script>
-
-  /* ==========================================================
-     QUIZ-DATEN
-     Passe Titel und Fragen hier an. Jede Frage kann enthalten:
-       question : Fragetext (optional bei reinen Audiofragen)
-       image    : Bild-URL, wird über der Frage angezeigt (optional)
-       audio    : URL einer Audiodatei, wird automatisch abgespielt (optional)
-       answers  : [richtige Antwort, falsche Antwort]
-                  die RICHTIGE Antwort steht immer an erster Stelle im Array.
-                  Bei der Anzeige wird per Zufall entschieden, ob sie links
-                  oder rechts erscheint — im JSON bleibt die Reihenfolge fix.
-                  Jede Antwort ist entweder ein Text ("1980er")
-                  oder ein Bild { image: "url.jpg" }
-     ========================================================== */
 
   /* ==========================================================
      QUIZ-DATEN
@@ -451,11 +488,12 @@
            "question": "Fragetext",                    // optional bei reinen Audiofragen
            "image": "url.jpg",                          // optional, Bild über der Frage
            "audio": "song.mp3",                         // optional, wird automatisch abgespielt
-           "answers": ["richtige Antwort", "falsche Antwort"]
+           "answers": ["richtige Antwort", "falsche Antwort"],
            // die RICHTIGE Antwort steht immer an erster Stelle im Array.
            // Bei der Anzeige wird per Zufall entschieden, ob sie links
            // oder rechts erscheint — im JSON bleibt die Reihenfolge fix.
            // Jede Antwort ist entweder ein Text oder ein Bild { "image": "url.jpg" }
+           "note": "Zusatzinfo, die bei der Auflösung erscheint" // optional
          }
        ]
      }
@@ -536,6 +574,7 @@
   const ansRightImage = document.getElementById("answer-right-image");
   const verdictLeft = document.getElementById("verdict-left");
   const verdictRight = document.getElementById("verdict-right");
+  const noteBox = document.getElementById("note-box");
 
   function setAnswerContent(textEl, imgEl, value){
     if(value && typeof value === "object" && value.image){
@@ -578,6 +617,9 @@
     verdictLeft.innerHTML = "";
     verdictRight.innerHTML = "";
 
+    noteBox.className = "note-box";
+    noteBox.textContent = "";
+
     ansLeft.classList.remove("in","correct","wrong");
     ansRight.classList.remove("in","correct","wrong");
     qTextEl.classList.remove("in");
@@ -615,6 +657,7 @@
 
   function revealAnswer(){
     revealed = true;
+    const q = QUIZ_DATA[index];
     const correctEl = currentCorrectSide === 0 ? ansLeft : ansRight;
     const wrongEl = currentCorrectSide === 0 ? ansRight : ansLeft;
     const correctVerdict = currentCorrectSide === 0 ? verdictLeft : verdictRight;
@@ -628,9 +671,14 @@
     wrongVerdict.classList.add("no");
     wrongVerdict.innerHTML = crossSvg + "Falsch";
 
+    if(q.note){
+      noteBox.textContent = q.note;
+    }
+
     requestAnimationFrame(() => {
       correctVerdict.classList.add("show");
       wrongVerdict.classList.add("show");
+      if(q.note) noteBox.classList.add("show");
     });
   }
 
@@ -679,6 +727,24 @@
       document.exitFullscreen().catch(()=>{});
     }
   }
+
+  const fsBtn = document.getElementById("fullscreen-btn");
+  const fsIconExpand = document.getElementById("fs-icon-expand");
+  const fsIconCompact = document.getElementById("fs-icon-compact");
+
+  function updateFullscreenIcon(){
+    const isFs = !!document.fullscreenElement;
+    fsIconExpand.hidden = isFs;
+    fsIconCompact.hidden = !isFs;
+    fsBtn.setAttribute("aria-label", isFs ? "Vollbild verlassen" : "Vollbild aktivieren");
+  }
+
+  fsBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleFullscreen();
+  });
+  document.addEventListener("fullscreenchange", updateFullscreenIcon);
+  updateFullscreenIcon();
 
   window.addEventListener("keydown", (e) => {
     if(e.key === "ArrowRight" || e.key === " "){
