@@ -105,12 +105,11 @@
     margin:4vh 0 3vh;
   }
   .vs-dot{
-    width:clamp(14px,1.6vw,22px); height:clamp(14px,1.6vw,22px);
-    border-radius:50%;
     animation: pulseDot 2.4s ease-in-out infinite;
+    font-size: 3rem;
+    text-shadow:0 0 20px rgba(240,180,41,0.55);
   }
-  .vs-dot-left{ background:var(--amber); box-shadow:0 0 20px rgba(240,180,41,0.55); }
-  .vs-dot-right{ background:var(--green); box-shadow:0 0 20px rgba(61,220,132,0.5); animation-delay:1.2s; }
+  .vs-dot-right{ animation-delay:1.2s; }
   @keyframes pulseDot{
     0%,100%{ transform:scale(1); opacity:.85; }
     50%{ transform:scale(1.25); opacity:1; }
@@ -418,11 +417,11 @@
     <div class="kicker" id="quiz-kicker">Livequiz</div>
     <h1 id="quiz-title">Fifty-Fifty Fight</h1>
     <div class="vs-badge">
-      <span class="vs-dot vs-dot-left">🤛</span>
+      <span class="vs-dot vs-dot-left">🤜</span>
       <span class="vs-label">VS</span>
-      <span class="vs-dot vs-dot-right">🤜</span>
+      <span class="vs-dot vs-dot-right">🤛</span>
     </div>
-    <p>Bei jeder Frage treten zwei Antworten gegeneinander an. Entscheide dich für links oder rechts — nur eine gewinnt.</p>
+    <p>Linke oder rechte Antwort? Antworte falsch und du verlierst ein Leben. Bei der zweiten falschen Antwort bist du raus.</p>
     <div class="hint loading">Lade Fragen …</div>
   </div>
 
